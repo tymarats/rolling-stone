@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* RollingStoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* RollingStoneAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28EC4C5911D54ECE0027AA9F /* RollingStoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EC4C5711D54ECE0027AA9F /* RollingStoneViewController.m */; };
+		28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */; };
+		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
+		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		7805021B1291BB7A00D0C2C0 /* RealWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7805021A1291BB7A00D0C2C0 /* RealWorldScene.m */; };
+		7805022F1291BF2700D0C2C0 /* RollingStoneDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7805022E1291BF2700D0C2C0 /* RollingStoneDirector.m */; };
+		7817DA0F129AF6FD00B81D90 /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 7817DA0E129AF6FD00B81D90 /* Sprite.m */; };
+		78213BA11290BDC600801E4D /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 78213BA01290BDC600801E4D /* Scene.m */; };
+		7844354812996BD900911613 /* TextureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844354712996BD900911613 /* TextureManager.m */; };
+		7844D8191299724D00C56DE2 /* RollingStoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7844D8181299724D00C56DE2 /* RollingStoneViewController.xib */; };
+		7844D824129973FC00C56DE2 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 7844D81F129973FC00C56DE2 /* 6.png */; };
+		7844D825129973FC00C56DE2 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 7844D820129973FC00C56DE2 /* 8.png */; };
+		7844D826129973FC00C56DE2 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 7844D821129973FC00C56DE2 /* 11.png */; };
+		7844D827129973FC00C56DE2 /* 1069.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7844D822129973FC00C56DE2 /* 1069.jpg */; };
+		7844D828129973FC00C56DE2 /* table.png in Resources */ = {isa = PBXBuildFile; fileRef = 7844D823129973FC00C56DE2 /* table.png */; };
+		784CFAAB12998373003A0EA5 /* game-objects-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 784CFAAA12998373003A0EA5 /* game-objects-512.png */; };
+		785BA131129B410F00E3C65C /* wood-texture-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 785BA130129B410F00E3C65C /* wood-texture-background.jpg */; };
+		785BD1681295FE8E002E6E54 /* PoolBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 785BD1671295FE8E002E6E54 /* PoolBall.m */; };
+		785BD18612960033002E6E54 /* Texture2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 785BD18512960033002E6E54 /* Texture2D.m */; };
+		785BD1B11296012D002E6E54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785BD1B01296012D002E6E54 /* CoreGraphics.framework */; };
+		786D5CC012959ED70010B665 /* Wind.m in Sources */ = {isa = PBXBuildFile; fileRef = 786D5CBF12959ED70010B665 /* Wind.m */; };
+		786D5E2B1295ACDE0010B665 /* SimpleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 786D5E2A1295ACDE0010B665 /* SimpleScene.m */; };
+		786D5EA51295B98D0010B665 /* SimpleSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 786D5EA41295B98D0010B665 /* SimpleSceneController.m */; };
+		786DD857129B1D520098E2EF /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 786DD856129B1D520098E2EF /* Object.m */; };
+		786DD882129B21140098E2EF /* NewtonReactDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 786DD881129B21140098E2EF /* NewtonReactDelegate.m */; };
+		786DD9C3129B2E550098E2EF /* RollingNewtonReactDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 786DD9C2129B2E550098E2EF /* RollingNewtonReactDelegate.m */; };
+		786DDAA0129B39B40098E2EF /* wood-effect.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 786DDA9F129B39B40098E2EF /* wood-effect.jpg */; };
+		788D03C11291EF850073A618 /* BlenderObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D03C01291EF850073A618 /* BlenderObject.m */; };
+		788D04491291F8040073A618 /* Gravity.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D04481291F8040073A618 /* Gravity.m */; };
+		78989C3C12A02F1F002CA516 /* 0005.png in Resources */ = {isa = PBXBuildFile; fileRef = 78989C3B12A02F1F002CA516 /* 0005.png */; };
+		78989C5812A03564002CA516 /* shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 78989C5712A03564002CA516 /* shadow.png */; };
+		78A4281D1293000000F998FD /* SceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A4281C1293000000F998FD /* SceneController.m */; };
+		78A4286B1293080400F998FD /* AccelerometerSimulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A4286A1293080400F998FD /* AccelerometerSimulation.m */; };
+		78AADBF0129D6E42008DEDD5 /* CosineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AADBEF129D6E42008DEDD5 /* CosineController.m */; };
+		78AADC6A129DA234008DEDD5 /* CompositeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AADC69129DA234008DEDD5 /* CompositeAnimation.m */; };
+		78AADDD6129DBA8A008DEDD5 /* SimultaneousAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AADDD5129DBA8A008DEDD5 /* SimultaneousAnimation.m */; };
+		78AADE58129DC151008DEDD5 /* ScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AADE57129DC151008DEDD5 /* ScaleAnimation.m */; };
+		78AADF40129DD5BC008DEDD5 /* wood-texture-background-codaxy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78AADF3F129DD5BC008DEDD5 /* wood-texture-background-codaxy.jpg */; };
+		78ACA2CF129C14D8005880BC /* FunctionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ACA2CE129C14D8005880BC /* FunctionController.m */; };
+		78ACA2D7129C1918005880BC /* Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ACA2D6129C1918005880BC /* Animation.m */; };
+		78ACA30A129C529D005880BC /* PositionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 78ACA309129C529D005880BC /* PositionAnimation.m */; };
+		78C0A4B012995AF300C326F5 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C0A4AF12995AF300C326F5 /* SoundManager.m */; };
+		78C0A4CA12995CE500C326F5 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C0A4C912995CE500C326F5 /* OpenAL.framework */; };
+		78C0A4CC12995D0400C326F5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C0A4CB12995D0400C326F5 /* AudioToolbox.framework */; };
+		78C0A4CE12995D0400C326F5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C0A4CD12995D0400C326F5 /* AVFoundation.framework */; };
+		78C0A4D012995D0400C326F5 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C0A4CF12995D0400C326F5 /* CoreAudio.framework */; };
+		78C2C209129C5F7A0070AC38 /* EaseInController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C2C208129C5F7A0070AC38 /* EaseInController.m */; };
+		78C2C222129C60A60070AC38 /* EaseOutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C2C221129C60A60070AC38 /* EaseOutController.m */; };
+		78C2C231129C61BD0070AC38 /* EaseInOutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C2C230129C61BD0070AC38 /* EaseInOutController.m */; };
+		78C2C2C9129C6F5A0070AC38 /* OpacityAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C2C2C8129C6F5A0070AC38 /* OpacityAnimation.m */; };
+		78C2C484129C8A760070AC38 /* StepController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C2C483129C8A760070AC38 /* StepController.m */; };
+		78D4620E1299AD7100FDDA1A /* LightTestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D4620D1299AD7100FDDA1A /* LightTestScene.m */; };
+		78E7A1A7129F0B5800750C9B /* codaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E7A1A6129F0B5800750C9B /* codaxy.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* RollingStoneAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollingStoneAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* RollingStoneAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollingStoneAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* RollingStone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RollingStone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28EC4C5611D54ECE0027AA9F /* RollingStoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollingStoneViewController.h; sourceTree = "<group>"; };
+		28EC4C5711D54ECE0027AA9F /* RollingStoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollingStoneViewController.m; sourceTree = "<group>"; };
+		28FD14FC0DC6FC130079059D /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		28FD14FD0DC6FC130079059D /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* RollingStone_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollingStone_Prefix.pch; sourceTree = "<group>"; };
+		780160A81298309E008CADB9 /* GLHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLHelper.h; sourceTree = "<group>"; };
+		780502191291BB7A00D0C2C0 /* RealWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealWorldScene.h; sourceTree = "<group>"; };
+		7805021A1291BB7A00D0C2C0 /* RealWorldScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealWorldScene.m; sourceTree = "<group>"; };
+		7805022D1291BF2700D0C2C0 /* RollingStoneDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollingStoneDirector.h; sourceTree = "<group>"; };
+		7805022E1291BF2700D0C2C0 /* RollingStoneDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollingStoneDirector.m; sourceTree = "<group>"; };
+		7805026B1291CDBC00D0C2C0 /* OpenGLCommon2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommon2.h; sourceTree = "<group>"; };
+		7817DA0D129AF6FD00B81D90 /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
+		7817DA0E129AF6FD00B81D90 /* Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sprite.m; sourceTree = "<group>"; };
+		78213B9F1290BDC600801E4D /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		78213BA01290BDC600801E4D /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
+		7844354612996BD900911613 /* TextureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureManager.h; sourceTree = "<group>"; };
+		7844354712996BD900911613 /* TextureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextureManager.m; sourceTree = "<group>"; };
+		7844D8181299724D00C56DE2 /* RollingStoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RollingStoneViewController.xib; sourceTree = "<group>"; };
+		7844D81F129973FC00C56DE2 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		7844D820129973FC00C56DE2 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		7844D821129973FC00C56DE2 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		7844D822129973FC00C56DE2 /* 1069.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1069.jpg; sourceTree = "<group>"; };
+		7844D823129973FC00C56DE2 /* table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table.png; sourceTree = "<group>"; };
+		784CFAAA12998373003A0EA5 /* game-objects-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game-objects-512.png"; sourceTree = "<group>"; };
+		785BA130129B410F00E3C65C /* wood-texture-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-texture-background.jpg"; sourceTree = "<group>"; };
+		785BD1661295FE8E002E6E54 /* PoolBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolBall.h; sourceTree = "<group>"; };
+		785BD1671295FE8E002E6E54 /* PoolBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolBall.m; sourceTree = "<group>"; };
+		785BD18412960033002E6E54 /* Texture2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture2D.h; sourceTree = "<group>"; };
+		785BD18512960033002E6E54 /* Texture2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Texture2D.m; sourceTree = "<group>"; };
+		785BD1B01296012D002E6E54 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		786D5CBE12959ED70010B665 /* Wind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wind.h; sourceTree = "<group>"; };
+		786D5CBF12959ED70010B665 /* Wind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wind.m; sourceTree = "<group>"; };
+		786D5E291295ACDE0010B665 /* SimpleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleScene.h; sourceTree = "<group>"; };
+		786D5E2A1295ACDE0010B665 /* SimpleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleScene.m; sourceTree = "<group>"; };
+		786D5EA01295B91E0010B665 /* CubeVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeVertices.h; sourceTree = "<group>"; };
+		786D5EA31295B98D0010B665 /* SimpleSceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleSceneController.h; sourceTree = "<group>"; };
+		786D5EA41295B98D0010B665 /* SimpleSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleSceneController.m; sourceTree = "<group>"; };
+		786DD851129B1CF00098E2EF /* ReactDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactDelegate.h; sourceTree = "<group>"; };
+		786DD855129B1D520098E2EF /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		786DD856129B1D520098E2EF /* Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object.m; sourceTree = "<group>"; };
+		786DD880129B21140098E2EF /* NewtonReactDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewtonReactDelegate.h; sourceTree = "<group>"; };
+		786DD881129B21140098E2EF /* NewtonReactDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewtonReactDelegate.m; sourceTree = "<group>"; };
+		786DD9C1129B2E550098E2EF /* RollingNewtonReactDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollingNewtonReactDelegate.h; sourceTree = "<group>"; };
+		786DD9C2129B2E550098E2EF /* RollingNewtonReactDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollingNewtonReactDelegate.m; sourceTree = "<group>"; };
+		786DDA9F129B39B40098E2EF /* wood-effect.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-effect.jpg"; sourceTree = "<group>"; };
+		788D03BE1291EF550073A618 /* IcoSphereVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IcoSphereVertices.h; sourceTree = "<group>"; };
+		788D03BF1291EF850073A618 /* BlenderObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlenderObject.h; sourceTree = "<group>"; };
+		788D03C01291EF850073A618 /* BlenderObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlenderObject.m; sourceTree = "<group>"; };
+		788D04461291F7AE0073A618 /* Reactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reactor.h; sourceTree = "<group>"; };
+		788D04471291F8040073A618 /* Gravity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gravity.h; sourceTree = "<group>"; };
+		788D04481291F8040073A618 /* Gravity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gravity.m; sourceTree = "<group>"; };
+		78989C3B12A02F1F002CA516 /* 0005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0005.png; sourceTree = "<group>"; };
+		78989C5712A03564002CA516 /* shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow.png; sourceTree = "<group>"; };
+		78A4281B1293000000F998FD /* SceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneController.h; sourceTree = "<group>"; };
+		78A4281C1293000000F998FD /* SceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneController.m; sourceTree = "<group>"; };
+		78A428691293080400F998FD /* AccelerometerSimulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerSimulation.h; sourceTree = "<group>"; };
+		78A4286A1293080400F998FD /* AccelerometerSimulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerSimulation.m; sourceTree = "<group>"; };
+		78A428F012930F0A00F998FD /* SphereRoughVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SphereRoughVertices.h; sourceTree = "<group>"; };
+		78A429171293159300F998FD /* MonkeyVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonkeyVertices.h; sourceTree = "<group>"; };
+		78AADBEE129D6E42008DEDD5 /* CosineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CosineController.h; sourceTree = "<group>"; };
+		78AADBEF129D6E42008DEDD5 /* CosineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CosineController.m; sourceTree = "<group>"; };
+		78AADC68129DA234008DEDD5 /* CompositeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositeAnimation.h; sourceTree = "<group>"; };
+		78AADC69129DA234008DEDD5 /* CompositeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositeAnimation.m; sourceTree = "<group>"; };
+		78AADDD4129DBA8A008DEDD5 /* SimultaneousAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimultaneousAnimation.h; sourceTree = "<group>"; };
+		78AADDD5129DBA8A008DEDD5 /* SimultaneousAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimultaneousAnimation.m; sourceTree = "<group>"; };
+		78AADE56129DC151008DEDD5 /* ScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleAnimation.h; sourceTree = "<group>"; };
+		78AADE57129DC151008DEDD5 /* ScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaleAnimation.m; sourceTree = "<group>"; };
+		78AADEFD129DCB5D008DEDD5 /* SmoothBallVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothBallVertices.h; sourceTree = "<group>"; };
+		78AADF3F129DD5BC008DEDD5 /* wood-texture-background-codaxy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-texture-background-codaxy.jpg"; sourceTree = "<group>"; };
+		78AC0B041298022E00DC5EA6 /* OpenGLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommon.h; sourceTree = "<group>"; };
+		78ACA2CD129C14D8005880BC /* FunctionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionController.h; sourceTree = "<group>"; };
+		78ACA2CE129C14D8005880BC /* FunctionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionController.m; sourceTree = "<group>"; };
+		78ACA2D5129C1918005880BC /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
+		78ACA2D6129C1918005880BC /* Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation.m; sourceTree = "<group>"; };
+		78ACA308129C529D005880BC /* PositionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionAnimation.h; sourceTree = "<group>"; };
+		78ACA309129C529D005880BC /* PositionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionAnimation.m; sourceTree = "<group>"; };
+		78C0A4AE12995AF300C326F5 /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		78C0A4AF12995AF300C326F5 /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+		78C0A4C912995CE500C326F5 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		78C0A4CB12995D0400C326F5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		78C0A4CD12995D0400C326F5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		78C0A4CF12995D0400C326F5 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		78C2C207129C5F7A0070AC38 /* EaseInController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseInController.h; sourceTree = "<group>"; };
+		78C2C208129C5F7A0070AC38 /* EaseInController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseInController.m; sourceTree = "<group>"; };
+		78C2C220129C60A60070AC38 /* EaseOutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseOutController.h; sourceTree = "<group>"; };
+		78C2C221129C60A60070AC38 /* EaseOutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseOutController.m; sourceTree = "<group>"; };
+		78C2C22F129C61BD0070AC38 /* EaseInOutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseInOutController.h; sourceTree = "<group>"; };
+		78C2C230129C61BD0070AC38 /* EaseInOutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseInOutController.m; sourceTree = "<group>"; };
+		78C2C2C7129C6F5A0070AC38 /* OpacityAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpacityAnimation.h; sourceTree = "<group>"; };
+		78C2C2C8129C6F5A0070AC38 /* OpacityAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpacityAnimation.m; sourceTree = "<group>"; };
+		78C2C482129C8A760070AC38 /* StepController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepController.h; sourceTree = "<group>"; };
+		78C2C483129C8A760070AC38 /* StepController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepController.m; sourceTree = "<group>"; };
+		78D4620C1299AD7100FDDA1A /* LightTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightTestScene.h; sourceTree = "<group>"; };
+		78D4620D1299AD7100FDDA1A /* LightTestScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightTestScene.m; sourceTree = "<group>"; };
+		78E7A1A6129F0B5800750C9B /* codaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codaxy.png; sourceTree = "<group>"; };
+		78F8B36B12970035000AF6B5 /* TexturedSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TexturedSphere.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */,
+				28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */,
+				785BD1B11296012D002E6E54 /* CoreGraphics.framework in Frameworks */,
+				78C0A4CA12995CE500C326F5 /* OpenAL.framework in Frameworks */,
+				78C0A4CC12995D0400C326F5 /* AudioToolbox.framework in Frameworks */,
+				78C0A4CE12995D0400C326F5 /* AVFoundation.framework in Frameworks */,
+				78C0A4D012995D0400C326F5 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				28FD14FC0DC6FC130079059D /* EAGLView.h */,
+				28FD14FD0DC6FC130079059D /* EAGLView.m */,
+				1D3623240D0F684500981E51 /* RollingStoneAppDelegate.h */,
+				1D3623250D0F684500981E51 /* RollingStoneAppDelegate.m */,
+				28EC4C5611D54ECE0027AA9F /* RollingStoneViewController.h */,
+				28EC4C5711D54ECE0027AA9F /* RollingStoneViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* RollingStone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				78A427EE1292FD7900F998FD /* AccelSim */,
+				7805026A1291CDAD00D0C2C0 /* Common */,
+				78AADF09129DCD11008DEDD5 /* Game */,
+				78213BA21290BDCD00801E4D /* Engine */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				785BD1B01296012D002E6E54 /* CoreGraphics.framework */,
+				78C0A4C912995CE500C326F5 /* OpenAL.framework */,
+				78C0A4CB12995D0400C326F5 /* AudioToolbox.framework */,
+				78C0A4CD12995D0400C326F5 /* AVFoundation.framework */,
+				78C0A4CF12995D0400C326F5 /* CoreAudio.framework */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* RollingStone_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7844D81E129973E000C56DE2 /* Textures */,
+				7844D8181299724D00C56DE2 /* RollingStoneViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
+				28FD14FF0DC6FC520079059D /* OpenGLES.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		780501D91291B6CC00D0C2C0 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				786DD84F129B1CAA0098E2EF /* ReactDelegates */,
+				7817DB2F129B101F00B81D90 /* 3D */,
+				7817DA0B129AF6EE00B81D90 /* Sprite */,
+				786DD855129B1D520098E2EF /* Object.h */,
+				786DD856129B1D520098E2EF /* Object.m */,
+			);
+			name = Object;
+			sourceTree = "<group>";
+		};
+		7805022C1291BF1400D0C2C0 /* Director */ = {
+			isa = PBXGroup;
+			children = (
+				7805022D1291BF2700D0C2C0 /* RollingStoneDirector.h */,
+				7805022E1291BF2700D0C2C0 /* RollingStoneDirector.m */,
+			);
+			name = Director;
+			sourceTree = "<group>";
+		};
+		780502341291BFEA00D0C2C0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				78D4620B1299AD6300FDDA1A /* LightTestScene */,
+				786D5E281295ACCF0010B665 /* Simple Scene */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		7805026A1291CDAD00D0C2C0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				78AC0B041298022E00DC5EA6 /* OpenGLCommon.h */,
+				785BD18412960033002E6E54 /* Texture2D.h */,
+				785BD18512960033002E6E54 /* Texture2D.m */,
+				7805026B1291CDBC00D0C2C0 /* OpenGLCommon2.h */,
+				780160A81298309E008CADB9 /* GLHelper.h */,
+				7844354612996BD900911613 /* TextureManager.h */,
+				7844354712996BD900911613 /* TextureManager.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		780502DB1291D7DB00D0C2C0 /* Blender Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				78AADEFD129DCB5D008DEDD5 /* SmoothBallVertices.h */,
+				78F8B36B12970035000AF6B5 /* TexturedSphere.h */,
+				786D5EA01295B91E0010B665 /* CubeVertices.h */,
+				78A429171293159300F998FD /* MonkeyVertices.h */,
+				78A428F012930F0A00F998FD /* SphereRoughVertices.h */,
+				788D03BE1291EF550073A618 /* IcoSphereVertices.h */,
+			);
+			name = "Blender Definitions";
+			sourceTree = "<group>";
+		};
+		7817DA0B129AF6EE00B81D90 /* Sprite */ = {
+			isa = PBXGroup;
+			children = (
+				7817DA0D129AF6FD00B81D90 /* Sprite.h */,
+				7817DA0E129AF6FD00B81D90 /* Sprite.m */,
+			);
+			name = Sprite;
+			sourceTree = "<group>";
+		};
+		7817DB2F129B101F00B81D90 /* 3D */ = {
+			isa = PBXGroup;
+			children = (
+				788D03BF1291EF850073A618 /* BlenderObject.h */,
+				788D03C01291EF850073A618 /* BlenderObject.m */,
+				785BD1661295FE8E002E6E54 /* PoolBall.h */,
+				785BD1671295FE8E002E6E54 /* PoolBall.m */,
+			);
+			name = 3D;
+			sourceTree = "<group>";
+		};
+		78213BA21290BDCD00801E4D /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				780501D91291B6CC00D0C2C0 /* Object */,
+				78ACA2D2129C1597005880BC /* FunctionController */,
+				78ACA2CC129C1492005880BC /* Animation */,
+				78C0A4AC12995ADB00C326F5 /* Sound */,
+				788D04451291F77B0073A618 /* Reactors */,
+				78213BA31290BDDD00801E4D /* Scene */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		78213BA31290BDDD00801E4D /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				78213B9F1290BDC600801E4D /* Scene.h */,
+				78213BA01290BDC600801E4D /* Scene.m */,
+				780502191291BB7A00D0C2C0 /* RealWorldScene.h */,
+				7805021A1291BB7A00D0C2C0 /* RealWorldScene.m */,
+				78A4281B1293000000F998FD /* SceneController.h */,
+				78A4281C1293000000F998FD /* SceneController.m */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		7844D81E129973E000C56DE2 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				78989C5712A03564002CA516 /* shadow.png */,
+				78989C3B12A02F1F002CA516 /* 0005.png */,
+				78E7A1A6129F0B5800750C9B /* codaxy.png */,
+				78AADF3F129DD5BC008DEDD5 /* wood-texture-background-codaxy.jpg */,
+				785BA130129B410F00E3C65C /* wood-texture-background.jpg */,
+				786DDA9F129B39B40098E2EF /* wood-effect.jpg */,
+				784CFAAA12998373003A0EA5 /* game-objects-512.png */,
+				7844D81F129973FC00C56DE2 /* 6.png */,
+				7844D820129973FC00C56DE2 /* 8.png */,
+				7844D821129973FC00C56DE2 /* 11.png */,
+				7844D822129973FC00C56DE2 /* 1069.jpg */,
+				7844D823129973FC00C56DE2 /* table.png */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		786D5E281295ACCF0010B665 /* Simple Scene */ = {
+			isa = PBXGroup;
+			children = (
+				786D5E291295ACDE0010B665 /* SimpleScene.h */,
+				786D5E2A1295ACDE0010B665 /* SimpleScene.m */,
+				786D5EA31295B98D0010B665 /* SimpleSceneController.h */,
+				786D5EA41295B98D0010B665 /* SimpleSceneController.m */,
+			);
+			name = "Simple Scene";
+			sourceTree = "<group>";
+		};
+		786DD84F129B1CAA0098E2EF /* ReactDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				786DD851129B1CF00098E2EF /* ReactDelegate.h */,
+				786DD880129B21140098E2EF /* NewtonReactDelegate.h */,
+				786DD881129B21140098E2EF /* NewtonReactDelegate.m */,
+				786DD9C1129B2E550098E2EF /* RollingNewtonReactDelegate.h */,
+				786DD9C2129B2E550098E2EF /* RollingNewtonReactDelegate.m */,
+			);
+			name = ReactDelegates;
+			sourceTree = "<group>";
+		};
+		788D04451291F77B0073A618 /* Reactors */ = {
+			isa = PBXGroup;
+			children = (
+				788D04461291F7AE0073A618 /* Reactor.h */,
+				788D04471291F8040073A618 /* Gravity.h */,
+				788D04481291F8040073A618 /* Gravity.m */,
+				786D5CBE12959ED70010B665 /* Wind.h */,
+				786D5CBF12959ED70010B665 /* Wind.m */,
+			);
+			name = Reactors;
+			sourceTree = "<group>";
+		};
+		78A427EE1292FD7900F998FD /* AccelSim */ = {
+			isa = PBXGroup;
+			children = (
+				78A428691293080400F998FD /* AccelerometerSimulation.h */,
+				78A4286A1293080400F998FD /* AccelerometerSimulation.m */,
+			);
+			path = AccelSim;
+			sourceTree = "<group>";
+		};
+		78AADF09129DCD11008DEDD5 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				780502DB1291D7DB00D0C2C0 /* Blender Definitions */,
+				7805022C1291BF1400D0C2C0 /* Director */,
+				780502341291BFEA00D0C2C0 /* Scenes */,
+			);
+			name = Game;
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		78ACA2CC129C1492005880BC /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				78ACA2D5129C1918005880BC /* Animation.h */,
+				78ACA2D6129C1918005880BC /* Animation.m */,
+				78ACA308129C529D005880BC /* PositionAnimation.h */,
+				78ACA309129C529D005880BC /* PositionAnimation.m */,
+				78C2C2C7129C6F5A0070AC38 /* OpacityAnimation.h */,
+				78C2C2C8129C6F5A0070AC38 /* OpacityAnimation.m */,
+				78AADC68129DA234008DEDD5 /* CompositeAnimation.h */,
+				78AADC69129DA234008DEDD5 /* CompositeAnimation.m */,
+				78AADDD4129DBA8A008DEDD5 /* SimultaneousAnimation.h */,
+				78AADDD5129DBA8A008DEDD5 /* SimultaneousAnimation.m */,
+				78AADE56129DC151008DEDD5 /* ScaleAnimation.h */,
+				78AADE57129DC151008DEDD5 /* ScaleAnimation.m */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
+		78ACA2D2129C1597005880BC /* FunctionController */ = {
+			isa = PBXGroup;
+			children = (
+				78ACA2CD129C14D8005880BC /* FunctionController.h */,
+				78ACA2CE129C14D8005880BC /* FunctionController.m */,
+				78C2C207129C5F7A0070AC38 /* EaseInController.h */,
+				78C2C208129C5F7A0070AC38 /* EaseInController.m */,
+				78C2C220129C60A60070AC38 /* EaseOutController.h */,
+				78C2C221129C60A60070AC38 /* EaseOutController.m */,
+				78C2C22F129C61BD0070AC38 /* EaseInOutController.h */,
+				78C2C230129C61BD0070AC38 /* EaseInOutController.m */,
+				78C2C482129C8A760070AC38 /* StepController.h */,
+				78C2C483129C8A760070AC38 /* StepController.m */,
+				78AADBEE129D6E42008DEDD5 /* CosineController.h */,
+				78AADBEF129D6E42008DEDD5 /* CosineController.m */,
+			);
+			name = FunctionController;
+			sourceTree = "<group>";
+		};
+		78C0A4AC12995ADB00C326F5 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				78C0A4AE12995AF300C326F5 /* SoundManager.h */,
+				78C0A4AF12995AF300C326F5 /* SoundManager.m */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		78D4620B1299AD6300FDDA1A /* LightTestScene */ = {
+			isa = PBXGroup;
+			children = (
+				78D4620C1299AD7100FDDA1A /* LightTestScene.h */,
+				78D4620D1299AD7100FDDA1A /* LightTestScene.m */,
+			);
+			name = LightTestScene;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* RollingStone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "RollingStone" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RollingStone;
+			productName = RollingStone;
+			productReference = 1D6058910D05DD3D006BFB54 /* RollingStone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RollingStone" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* RollingStone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				7844D8191299724D00C56DE2 /* RollingStoneViewController.xib in Resources */,
+				7844D824129973FC00C56DE2 /* 6.png in Resources */,
+				7844D825129973FC00C56DE2 /* 8.png in Resources */,
+				7844D826129973FC00C56DE2 /* 11.png in Resources */,
+				7844D827129973FC00C56DE2 /* 1069.jpg in Resources */,
+				7844D828129973FC00C56DE2 /* table.png in Resources */,
+				784CFAAB12998373003A0EA5 /* game-objects-512.png in Resources */,
+				786DDAA0129B39B40098E2EF /* wood-effect.jpg in Resources */,
+				785BA131129B410F00E3C65C /* wood-texture-background.jpg in Resources */,
+				78AADF40129DD5BC008DEDD5 /* wood-texture-background-codaxy.jpg in Resources */,
+				78E7A1A7129F0B5800750C9B /* codaxy.png in Resources */,
+				78989C3C12A02F1F002CA516 /* 0005.png in Resources */,
+				78989C5812A03564002CA516 /* shadow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* RollingStoneAppDelegate.m in Sources */,
+				28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */,
+				28EC4C5911D54ECE0027AA9F /* RollingStoneViewController.m in Sources */,
+				78213BA11290BDC600801E4D /* Scene.m in Sources */,
+				7805021B1291BB7A00D0C2C0 /* RealWorldScene.m in Sources */,
+				7805022F1291BF2700D0C2C0 /* RollingStoneDirector.m in Sources */,
+				788D03C11291EF850073A618 /* BlenderObject.m in Sources */,
+				788D04491291F8040073A618 /* Gravity.m in Sources */,
+				78A4281D1293000000F998FD /* SceneController.m in Sources */,
+				78A4286B1293080400F998FD /* AccelerometerSimulation.m in Sources */,
+				786D5CC012959ED70010B665 /* Wind.m in Sources */,
+				786D5E2B1295ACDE0010B665 /* SimpleScene.m in Sources */,
+				786D5EA51295B98D0010B665 /* SimpleSceneController.m in Sources */,
+				785BD1681295FE8E002E6E54 /* PoolBall.m in Sources */,
+				785BD18612960033002E6E54 /* Texture2D.m in Sources */,
+				78C0A4B012995AF300C326F5 /* SoundManager.m in Sources */,
+				7844354812996BD900911613 /* TextureManager.m in Sources */,
+				78D4620E1299AD7100FDDA1A /* LightTestScene.m in Sources */,
+				7817DA0F129AF6FD00B81D90 /* Sprite.m in Sources */,
+				786DD857129B1D520098E2EF /* Object.m in Sources */,
+				786DD882129B21140098E2EF /* NewtonReactDelegate.m in Sources */,
+				786DD9C3129B2E550098E2EF /* RollingNewtonReactDelegate.m in Sources */,
+				78ACA2CF129C14D8005880BC /* FunctionController.m in Sources */,
+				78ACA2D7129C1918005880BC /* Animation.m in Sources */,
+				78ACA30A129C529D005880BC /* PositionAnimation.m in Sources */,
+				78C2C209129C5F7A0070AC38 /* EaseInController.m in Sources */,
+				78C2C222129C60A60070AC38 /* EaseOutController.m in Sources */,
+				78C2C231129C61BD0070AC38 /* EaseInOutController.m in Sources */,
+				78C2C2C9129C6F5A0070AC38 /* OpacityAnimation.m in Sources */,
+				78C2C484129C8A760070AC38 /* StepController.m in Sources */,
+				78AADBF0129D6E42008DEDD5 /* CosineController.m in Sources */,
+				78AADC6A129DA234008DEDD5 /* CompositeAnimation.m in Sources */,
+				78AADDD6129DBA8A008DEDD5 /* SimultaneousAnimation.m in Sources */,
+				78AADE58129DC151008DEDD5 /* ScaleAnimation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RollingStone_Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "RollingStone-Info.plist";
+				PRODUCT_NAME = RollingStone;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RollingStone_Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "RollingStone-Info.plist";
+				PRODUCT_NAME = RollingStone;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "RollingStone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RollingStone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
